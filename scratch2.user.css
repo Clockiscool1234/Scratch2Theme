@@ -1,0 +1,1313 @@
+/* ==UserStyle==
+@name           Scratch 2 Theme
+@namespace      https://github.com/Clockiscool1234/Scratch2Theme
+@version        1.0.0
+@description    Scratch 2 Editor Theme
+@author         Clockiscool
+==/UserStyle== */
+@-moz-document url-prefix("https://scratch.mit.edu/projects/") {
+    * {
+        transition: none !important;
+    }
+
+    body.sa-body-editor button:has(span) {
+        border: 1px solid #d0d1d2 !important;
+        border-radius: 6px;
+        padding: 0 7px 1px !important;
+        height: 26px;
+        background: linear-gradient(#ffffff, #e6e8e8) !important;
+        white-space: nowrap;
+    }
+
+    body.sa-body-editor button:has(span):hover {
+        background: #179fd7 !important;
+        color: #ffffff !important;
+    }
+
+    body.sa-body-editor button:has(span) span {
+        font-weight: normal;
+        color: #5c5d5f;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    body.sa-body-editor button:has(span):hover span {
+        color: #ffffff !important;
+    }
+
+    [class*="modal_modal-overlay_"] {
+        background-color: transparent;
+    }
+
+    [class*="modal_modal-content"] {
+        box-shadow: 3px 3px 8px rgba(51, 51, 51, .75);
+        border: 1px solid #b0b0b0;
+        border-radius: 7px 7px 0 0;
+    }
+
+    [class*="modal_header_"] {
+        background: linear-gradient(#e0e0e0, #d0d0d0);
+        height: 30px !important;
+    }
+    [class*="prompt_body"] {
+        background-color: #fff;
+    }
+    [class*="modal_modal-overlay_"] span {
+        color: #5c5d5f;
+        font-size: 12px !important;
+    }
+
+    [class*="modal_header-item-title"] {
+        color: #5c5d5f;
+    }
+
+    [class*="modal_header_"] [class*="close-button_large_"] {
+        display: none;
+    }
+
+    [class*="gui_menu-bar-position"][class*="menu-bar_menu-bar"][class*="box_box"] {
+        height: 28px;
+    }
+
+    [class*="gui_body-wrapper"] {
+        height: calc(100% - 28px);
+        margin-top: -2px;
+    }
+
+    [class*="stage-header_stage-menu-wrapper_"] {
+        height: 38px;
+        padding: 0 6px;
+    }
+    .sa-body-editor [class*="stage-header_stage-menu-wrapper_"]:not([class*="stage-wrapper_full-screen"] *) {
+        height: 38px;
+    }
+    [class*="stage-header_stage-header-wrapper_"],
+    [class*="stage-header_stage-header-wrapper-overlay_"]/* embeds */
+    {
+        background-image: linear-gradient(white, #e6e8e8);
+        border: 1px solid #d0d1d2;
+        border-bottom: none;
+        border-radius: 8px 8px 0 0;
+    }
+    [class*="stage-wrapper_full-screen"] div[class*="stage-header_stage-header-wrapper-overlay_"] {
+        width: min-content;
+        left: 50%;
+        top: 5px;
+        transform: translateX(-50%);
+    }
+    [class*="stage-wrapper_full-screen_"] {
+        top: 0 !important;
+    }
+    [class*="stage_full-screen_"] {
+        margin-top: 38px;
+        margin-left: 1px;
+    }
+    .sa-body-editor [class*="stage-header_unselect-wrapper_"] {
+        background: none;
+    }
+    [class*=stage_full-screen_] {
+        border: 1px solid #d0d1d2 !important;
+    }
+    [class*="green-flag_green-flag_"],
+    [class*="stop-all_stop-all_"],
+    .pause-btn {
+        padding: 1rem !important;
+        /* hide original icons */
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    [class*="green-flag_green-flag_"]:hover,
+    [class*="green-flag_green-flag_"][class*="green-flag_is-active_"],
+    [class*="stop-all_stop-all_"]:hover,
+    .pause-btn:hover {
+        background-color: transparent;
+    }
+    [class*="green-flag_green-flag_"] {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/563_assets.Resources_greenflagOff.png");
+    }
+    [class*="green-flag_green-flag_"]:hover,
+    [class*="green-flag_green-flag_"][class*="green-flag_is-active_"] {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/633_assets.Resources_greenflagOn.png");
+    }
+    [class*="stop-all_stop-all_"] {
+        background-image: url("https://raw.githubusercontent.com/ScratchAddons/ScratchAddons/refs/heads/master/addons/scratch3to2/assets/stop_hover.png");
+        opacity: 1;
+    }
+    [class*="stop-all_stop-all_"][class*="stop-all_is-active_"]:not(:hover) {
+        background-image: url("https://raw.githubusercontent.com/ScratchAddons/ScratchAddons/refs/heads/master/addons/scratch3to2/assets/stop.png");
+    }
+    .pause-btn[src$="pause.svg"] {
+        background-image: url("https://raw.githubusercontent.com/ScratchAddons/ScratchAddons/refs/heads/master/addons/scratch3to2/assets/pause.svg");
+        background-size: 20px 20px;
+    }
+    .pause-btn[src$="pause.svg"]:hover {
+        background-image: url("https://raw.githubusercontent.com/ScratchAddons/ScratchAddons/refs/heads/master/addons/scratch3to2/assets/pause_hover.svg");
+    }
+    .pause-btn[src$="play.svg"] {
+        background-image: url("https://raw.githubusercontent.com/ScratchAddons/ScratchAddons/refs/heads/master/addons/scratch3to2/assets/play.svg");
+        background-size: 20px 20px;
+    }
+    .pause-btn[src$="play.svg"]:hover {
+        background-image: url("https://raw.githubusercontent.com/ScratchAddons/ScratchAddons/refs/heads/master/addons/scratch3to2/assets/play_hover.svg");
+    }
+    [class*="stage-header_stage-size-row_"] > * {
+        background-color: transparent !important;
+    }
+    [class*="stage-header_stage-button_"] {
+        background-color: transparent !important;
+        border: none;
+    }
+    .sa-body-editor [class*="stage-header_stage-menu-wrapper_"]:not([class*="stage-wrapper_full-screen"] *) {
+        padding-left: 10px;
+    }
+    [class*="stage-header_stage-button_"]:not(.sa-gamepad-container *) {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/589_assets.Resources_fullscreenOff.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #0000 !important;
+    }
+    [class*="stage-header_stage-button-icon_"] {
+        filter: none;
+    }
+    [class*="stage-header_stage-button-icon_"]:not(.sa-gamepad-container *) {
+        display: none;
+    }
+    [class*="stage-wrapper_full-screen_"] [class*="stage-header_stage-button_"]:not(.sa-gamepad-container *) {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/628_assets.Resources_fullscreenOn.png");
+    }
+    .sa-body-editor [class*="stage-header_stage-button_"]:not([class*="stage-wrapper_full-screen"] *) {
+        width: 1.7rem;
+    }
+    [class*="stage-header_stage-size-toggle-group"] {
+        display: none;
+    }
+    [class*=react-tabs_react-tabs__tab_] {
+        height: 29px;
+        margin-left: 0 !important;
+        background: #f2f2f2;
+        color: #8f9193;
+        border: 1px solid #d0d1d2;
+        padding: 12px
+    }
+    [class*=react-tabs_react-tabs__tab_][aria-selected=true],
+    [class*="gui_tab_"]:not([class*="gui_is-selected_"]):hover {
+        color: #5c5d5f;
+        background: linear-gradient(#ffffff, #e6e8e8);
+        height: 29px;
+        top: 1px;
+        position: relative;
+        padding-bottom: 13px;
+        border-bottom: none;
+    }
+    [class^="backpack_backpack-header"] {
+        color: #5c5d5f;
+        background: linear-gradient(#ffffff, #e6e8e8);
+        height: 19px;
+        text-align: left;
+        position: relative;
+        padding-bottom: 13px;
+        line-height: 7px;
+        padding-left: 17px;
+    }
+    [class*="backpack_backpack-list_"] {
+        border: 1px solid #d0d1d2;
+        border-top-width: 1px;
+        border-top-style: solid;
+        border-top-color: rgb(208, 209, 210);
+        border-top: none;
+        background: #f2f2f2;
+    }
+    [class*=gui_target-wrapper] {
+        margin-top: 12px;
+    }
+    [class*="extension-button_extension-button-container_"] {
+        width: calc(202px - 1rem);
+        border: none;
+    }
+    [class*="extension-button_extension-button-container_"] img {
+        display: none;
+    }
+    .scratchCategoryItemBubble,
+    .scratchCategoryItemIcon {
+        width: 8px;
+        height: 100%;
+        border: none;
+        border-radius: 0 !important;
+    }
+    .scratchCategoryItemIcon {
+        background: #0e9a6c !important;
+    }
+    .scratchCategoryMenuItem.categorySelected .scratchCategoryItemBubble,
+    .scratchCategoryMenuItem.categorySelected .scratchCategoryItemIcon {
+        width: 100%;
+        margin: 0;
+    }
+    .scratchCategoryMenuItem.categorySelected .scratchCategoryMenuItemLabel {
+        position: absolute;
+        margin-left: 16px;
+        margin-top: 2px;
+        color: white !important;
+        font-weight: bold;
+    }
+    .scratchCategoryMenuItem:hover .scratchCategoryMenuItemLabel {
+        color: #fba939;
+    }
+    .scratchCategoryMenuItem {
+        padding: 0 0 0 0;
+        height: 18px;
+        border-radius: 0;
+        width: 87px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .scratchCategoryMenu {
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 5px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .scratchCategoryMenuRow:has([class*="motion"]) {
+        order: 1;
+    }
+
+    .scratchCategoryMenuRow:has([class*="events"]) {
+        order: 2;
+    }
+
+    .scratchCategoryMenuRow:has([class*="looks"]) {
+        order: 3;
+    }
+
+    .scratchCategoryMenuRow:has([class*="control"]) {
+        order: 4;
+    }
+
+    .scratchCategoryMenuRow:has([class*="sound"]) {
+        order: 5;
+    }
+
+    .scratchCategoryMenuRow:has([class*="sensing"]) {
+        order: 6;
+    }
+
+    .scratchCategoryMenu::before {
+        content: "";
+        order: 7;
+    }
+
+    .scratchCategoryMenuRow:has([class*="pen"]) {
+        position: absolute;
+        margin-top: -53px;
+        width: 87px;
+        z-index: 50;
+    }
+
+    .scratchCategoryMenuRow:has([class*="operators"]) {
+        order: 8;
+    }
+
+    .scratchCategoryMenuRow:has([class*="variables"]) {
+        order: 9;
+    }
+
+    .scratchCategoryMenuRow:has([class*="myBlocks"]) {
+        order: 10;
+    }
+
+    .blocklyToolboxDiv {
+        width: 202px !important;
+    }
+
+    g:not(.blocklyReplaceable) > .blocklyPath {
+        filter: url(#bevelFilter);
+    }
+
+    g[data-shapes="argument"]:not(.blocklyReplaceable) > path.blocklyPath.blocklyBlockBackground,
+    g[data-argument-type="text"]:not(.blocklyReplaceable) > path.blocklyPath.blocklyBlockBackground,
+    g[data-argument-type="text number"]:not(.blocklyReplaceable) > path.blocklyPath.blocklyBlockBackground,
+    g[data-argument-type="variable"]:not(.blocklyReplaceable) > path.blocklyPath.blocklyBlockBackground,
+    g.blocklyDraggable:not(.blocklyReplaceable) > path[data-argument-type="boolean"],
+    g.blocklyEditableText:has(rect.blocklyBlockBackground),
+    g[data-argument-type="dropdown"]:has(path.blocklyPath.blocklyBlockBackground) {
+        filter: url(#inputBevelFilter);
+    }
+
+    g[data-argument-type="dropdown"]:not(.blocklyReplaceable) > path.blocklyPath.blocklyBlockBackground,
+    rect.blocklyBlockBackground {
+        filter: url(#inputDarkFilter);
+    }
+    g[data-shapes="c-block c-1 hat"] > g[data-shapes="stack"]:not(.blocklyDraggable) > path.blocklyPath.blocklyBlockBackground {
+        filter: none;
+        stroke: #fff4;
+        fill: none;
+        stroke-width: 3px;
+    }
+
+    g[data-shapes="c-block c-1 hat"] > g[data-shapes="stack"]:not(.blocklyDraggable) > g {
+        filter: url(#bevelFilter) hue-rotate(-10deg) brightness(1.25);
+    }
+
+    text.blocklyText {
+        font-family: Lucida Grande,
+        Verdana,
+        Arial,
+        DejaVu Sans,
+        sans-serif;
+        font-weight: 700;
+    }
+
+    g.blocklyEditableText text.blocklyText {
+        font-weight: normal;
+        font-size: 14px !important;
+    }
+
+    [class*=menu-bar_file-group_] div:first-child img {
+        display: none;
+    }
+
+    [class*=menu-bar_file-group_] > div:first-child {
+        width: 70px;
+        height: 29px;
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/483_assets.Resources_scratchlogoOff.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    [class*=menu-bar_file-group_] > div:first-child:hover {
+        width: 70px;
+        height: 29px;
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/640_assets.Resources_scratchlogoOn.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    [class*="menu-bar_file-group"] > [class*="menu-bar_hoverable"] > img[src*="data:image/svg+xml;base64,PD94bW"] {
+        display: block;
+    }
+
+    [class*="menu-bar_file-group"] > [class*="menu-bar_hoverable"]:hover img {
+        filter: brightness(0) saturate(100%) invert(72%) sepia(97%) saturate(542%) hue-rotate(327deg) brightness(97%) contrast(102%);
+    }
+
+    [class*="menu-bar_menu-bar-item_"][class*="menu-bar_hoverable_"]:hover {
+        background-color: transparent;
+        color: #fba939;
+    }
+
+    [class*="menu_menu_"] {
+        margin-top: -2px;
+    }
+
+    [class*="stage_green-flag-overlay_"] {
+        background-color: transparent;
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/728_assets.Resources_playerStartFlag.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        border: none;
+        opacity: 0.9;
+    }
+
+    [class*="stage_green-flag-overlay_"] > img {
+        display: none;
+    }
+
+    [class*="stage-wrapper_full-screen"] [class*="stage_green-flag-overlay-wrapper_"] {
+        width: calc(100% - 3px) !important;
+        left: 2px !important;
+        height: calc(100% - 1px) !important;
+    }
+
+    [class*="gui_stage-and-target-wrapper_"] {
+        margin-top: 4px;
+        padding: 0 4px;
+    }
+
+    [class*="gui_flex-wrapper_"] {
+        margin-top: 2px;
+    }
+
+    [dir="ltr"] [class^="sprite-selector_sprite-selector"] {
+        margin-left: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 7px;
+    }
+
+    [dir="ltr"] [class^="target-pane_stage-selector-wrapper"] {
+        margin-right: 0;
+        border-top-right-radius: 0;
+        border-top-left-radius: 7px;
+    }
+
+    [class*="stage-selector_stage-selector_"],
+    [class*="stage-selector_header_"] {
+        border-top-right-radius: 0;
+        border-top-left-radius: 7px;
+        background: #e6e8e8;
+        border-right: none;
+    }
+
+    [class*="stage-selector_header_"] {
+        height: 29px;
+        background: linear-gradient(#ffffff, #e6e8e8);
+    }
+
+    [class*="stage-selector_header-title_"] {
+        position: relative;
+        top: 76px;
+        color: #5c5d5f !important;
+    }
+
+    [class*="gui_body-wrapper_"] [class*="stage-selector_is-selected_"] {
+        box-shadow: none;
+        border: 1px solid #d0d1d2;
+        border-top-right-radius: 0;
+        border-right: none;
+        border-top-left-radius: 7px;
+    }
+
+    [class*="stage-selector_is-selected_"]::before {
+        content: "";
+        position: absolute;
+        width: 64px;
+        height: 100px;
+        outline: 3px solid #179fd7;
+        border-radius: 4px;
+        top: 33px;
+    }
+
+    [class^="sprite-selector_sprite-selector"] [class*="sprite-selector_add-button_"] {
+        top: 0;
+        left: 0;
+        bottom: unset;
+    }
+
+    [class^="sprite-selector_sprite-selector"] [class*="action-menu_main-button"] {
+        display: none;
+    }
+
+    [class^="sprite-selector_sprite-selector"] [class*="action-menu_more-buttons-outer"] {
+        top: 0;
+        left: 0;
+        width: calc(100% + 16px);
+        height: 29px;
+        margin: 0;
+        border-radius: 0;
+        border-top-right-radius: 7px;
+        background: linear-gradient(#ffffff, #e6e8e8);
+        border-bottom: 1px solid #d0d1d2;
+    }
+
+
+    [class^="sprite-selector_sprite-selector"] [class*="action-menu_more-buttons-outer"]::before {
+        content: "Sprites";
+        line-height: 29px;
+        color: #5c5d5f;
+        font-size: 14px;
+        margin-left: 10px;
+        display: block;
+    }
+
+    [class^="sprite-selector_sprite-selector"] [class*="action-menu_more-buttons_"] {
+        flex-direction: row;
+        position: absolute;
+        top: 0px;
+        right: 5px;
+    }
+
+    [class^="sprite-selector_sprite-selector"] [class*="action-menu_more-buttons_"]::before {
+        content: "New sprite:";
+        line-height: 29px;
+        color: #5c5d5f;
+        font-size: 14px;
+    }
+
+    [class^="sprite-selector_sprite-selector"] [class*="action-menu_more-buttons_"] div button {
+        background: none !important;
+        padding: 0;
+        width: 19px;
+        margin: 0 3px;
+    }
+
+    [class^="sprite-selector_sprite-selector"] [class*="action-menu_more-buttons_"] div img {
+        filter: brightness(35%) !important;
+    }
+
+    [class^="sprite-selector_sprite-selector"] [class*="action-menu_more-buttons_"] div img:hover {
+        filter: brightness(0) saturate(100%) invert(61%) sepia(99%) saturate(2730%) hue-rotate(165deg) brightness(90%) contrast(85%) !important;
+    }
+
+
+    [class^="sprite-selector_sprite-selector"] [class*="action-menu_more-buttons_"] div div.__react_component_tooltip {
+        display: none !important;
+    }
+
+    [class*="input_input-form_"][class*="project-title-input_title-field_"] {
+        font-size: 11px;
+        height: 19px;
+        line-height: 19px;
+        padding: 0 3px;
+        border: 0;
+        border-radius: 3px;
+        color: #5c5d5f;
+        box-shadow: 0 -1px rgb(124, 126, 128), -1px 0 rgb(124, 126, 128), 0 0 0 1px rgb(199, 200, 202), inset 1px 1px 1px -1px rgba(0, 0, 0, .5);
+        -webkit-appearance: none;
+        background: #fff;
+        position: fixed;
+        top: 38px;
+        left: 58px;
+        width: 280px;
+    }
+
+    [class*="turbo-mode_turbo-container_"]:not([class*="stage-wrapper_full-screen"] *,
+    .guiPlayer *) {
+        position: relative;
+        top: 10px;
+    }
+
+    [class*="turbo-mode_turbo-container_"] img {
+        display: none;
+    }
+
+    [class*="author-info_project-title_"] {
+        position: fixed;
+        top: 34px;
+        left: 58px;
+        color: #5c5d5f;
+        font-weight: normal;
+    }
+
+    [class*="author-info_username-line_"] {
+        position: fixed;
+        top: 53px;
+        left: 58px;
+        color: #5c5d5f;
+        font-weight: normal;
+    }
+
+    [class*="stage-selector_costume-canvas_"] {
+        aspect-ratio: 4/3;
+        background-color: #fff;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    [class*="sprite-selector_items-wrapper"] {
+        margin-top: 30px;
+    }
+
+    .sa-show-sprite-properties [class^="sprite-info_sprite-info_"] {
+        position: relative;
+        z-index: 50;
+        height: calc(100% - 29px);
+        border-radius: 0;
+        background: #fff;
+        padding: 29px 0 0 19px;
+        top: 29px;
+    }
+
+    .sa-sprite-properties-close-btn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 18px;
+        height: 18px;
+        margin: 6px;
+        padding: 0;
+        background-color: #007be7;
+        border-radius: 50%;
+        transform: rotate(270deg);
+    }
+
+    .sa-sprite-properties-close-btn:hover {
+        background-color: #1e9ed6;
+    }
+
+    .sa-sprite-properties-close-btn img {
+        filter: brightness(500%);
+        opacity: 100% !important;
+        height: 8px;
+    }
+
+    [class*="input_input-form_"] {
+        margin: 0;
+        margin-bottom: 0px;
+        outline: 0;
+        font-size: 13px;
+        height: 19px;
+        line-height: 19px;
+        padding: 0 3px;
+        border: 0;
+        border-radius: 3px;
+        color: #5c5d5f;
+        box-shadow: 0 -1px rgb(124, 126, 128), -1px 0 rgb(124, 126, 128), 0 0 0 1px rgb(199, 200, 202), inset 1px 1px 1px -1px rgba(0, 0, 0, .5);
+        -webkit-appearance: none;
+    }
+
+    [class*="user-avatar_user-thumbnail_"] {
+        display: none;
+    }
+
+    [class*="menu-bar_menu-bar-button"] {
+        height: 22px;
+        font: inherit;
+        font-weight: bold;
+        line-height: 22px;
+        color: #fff;
+        margin: 0;
+        border: 0;
+        padding: 0 8px;
+        border-radius: 4px;
+        background: #9c9ea2;
+        margin-left: 5px;
+        box-shadow: none;
+    }
+
+    [class*="community-button_community-button_"] {
+        padding: 0 7px 0 5px !important;
+        background: #179fd7 !important;
+        position: fixed;
+        right: 5px;
+        top: 34px;
+    }
+
+    [class*="community-button_community-button_"] img {
+        display: none;
+    }
+
+    [class*="community-button_community-button_"]::before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 29px;
+        height: 23px;
+        position: relative;
+        top: -1px;
+        margin: 0 3px 0 0;
+        background: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/507_assets.Resources_projectPageFlip.png");
+    }
+
+    [class*="menu-bar_remix-button_"] {
+        position: fixed;
+        right: 150px;
+        top: 34px;
+        background-color: #fba939;
+    }
+
+    [class*="menu-bar_remix-button_"] img {
+        display: none;
+    }
+
+    [class*="share-button_"] {
+        position: fixed;
+        right: 150px;
+        top: 34px;
+    }
+
+    .pos-container-container {
+        display: none;
+    }
+
+    .pos-container-container:not([class*="stage-wrapper_full-screen"] *) {
+        display: block;
+        position: fixed;
+        top: 378px;
+        left: 340px;
+    }
+
+    .pos-container {
+        color: #5c5d5f !important;
+    }
+
+    .pos-container span:first-child::before {
+        content: "x: ";
+    }
+
+    .pos-container span:last-child::before {
+        content: "y: ";
+    }
+
+    [class*="sprite-selector_sprite-wrapper"],
+    [class*="sprite-selector-item_sprite-selector-item_"] {
+        width: 70px;
+        height: 70px;
+        border-radius: 4px;
+        background-color: #fff;
+        border: none !important;
+    }
+
+    [class*="sprite-selector-item_sprite-selector-item_"][class*="sprite-selector-item_is-selected_"] {
+        box-shadow: 0 0 0 3px #179fd7;
+        background-color: #d0d0d0 !important;
+    }
+
+    [class*="gui_tab-panel_"] [class*="sprite-selector-item_sprite-selector-item_"],
+    [class*="gui_tab-panel_"] [class*="sprite-selector-item_sprite-selector-item_"]:hover {
+        background-color: transparent;
+        width: 78px;
+        height: 91px;
+    }
+
+    [id="panel:r0:2"] [class*="sprite-selector-item_sprite-selector-item_"] {
+        height: 78px !important;
+    }
+
+    [id="panel:r0:2"] [class*="sprite-selector-item_sprite-selector-item_"] [class*="sprite-selector-item_sprite-image-inner_"] {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/542_assets.Resources_speakerOff.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    [id="panel:r0:2"] [class*="sprite-selector-item_sprite-selector-item_"] [class*="sprite-selector-item_sprite-image-inner_"] img {
+        display: none;
+    }
+
+    [class*="sprite-selector-item_sprite-info_"] {
+        background-color: transparent !important;
+        color: #5c5d5f !important;
+    }
+
+    [class*="sprite-selector-item_sprite-selector-item_"]:hover {
+        background-color: #fff;
+    }
+
+    [class*="sprite-selector-item_number"] {
+        background-color: transparent !important;
+    }
+
+    [class*="delete-button_delete-button-visible"] {
+        width: 12px;
+        height: 12px;
+        background-color: #414142;
+        box-shadow: none;
+        position: relative;
+        top: 5px;
+        left: 2px;
+    }
+
+    @media screen and (min-width: 1096px) {
+        [class*="input_input-form_"][class*="project-title-input_title-field_"] {
+            width: 350px;
+        }
+        .pos-container-container:not([class*="stage-wrapper_full-screen"] *) {
+            display: block;
+            position: fixed;
+            top: 432px;
+            left: 420px;
+        }
+    }
+
+    [class*="menu-bar_mystuff-button_"] {
+        width: 16px;
+        height: 29px;
+        background: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/626_assets.Resources_myStuffOff.png") no-repeat center center;
+    }
+
+    [class*="menu-bar_mystuff-button_"]:hover {
+        width: 16px;
+        height: 29px;
+        background: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/521_assets.Resources_myStuffOn.png") no-repeat center center;
+    }
+
+    [class*="menu-bar_mystuff-button_"] img {
+        display: none
+    }
+
+    .sa-sprite-properties-info-btn {
+        background-color: #007be7;
+        top: -3px;
+        left: -3px;
+    }
+
+    .sa-sprite-properties-info-btn:hover {
+        background-color: #1e9ed6;
+    }
+
+    [class*="stage-selector_label_"] {
+        position: relative;
+        top: 10px;
+    }
+
+    div[class*="monitor_value_"],
+    div[class*="monitor_list-value_"],
+    div[class*="monitor_large-value_"] {
+        font-size: 10px;
+        font-weight: bold;
+        color: #fff;
+        background: rgb(240, 125, 0);
+        box-shadow: inset -1px -1px 2px rgba(255, 255, 255, .5), inset 1px 1px 1px rgba(0, 0, 0, .4);
+        border: 1px solid #fff;
+        border-radius: 4px;
+    }
+    div[class*="monitor_large-value_"] {
+        font-size: 15px;
+        min-width: 49px;
+    }
+    div[class*="monitor_list-value_"] {
+        background: #cc5b22 !important;
+    }
+    div[class*="monitor_monitor-container_"] {
+        border: 1px solid #949191;
+        background: #c1c4c7;
+        border-radius: 4px;
+    }
+
+    [class*="loader_background_"],
+    [class*="crash-message_crash-wrapper_"] {
+        background-color: #bbbbbb;
+    }
+
+    [class*="loader_block-animation_"],
+    [class*="loader_message-container-outer_"] {
+        display: none;
+    }
+
+    [class*="loader_title_"] {
+        width: 340px;
+        height: 110px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.59);
+        color: #5c5d5f;
+        padding: 27px 0 0 0;
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    .guiPlayer [class*="loader_title_"] {
+        height: 137px;
+    }
+
+    [class*="loader_title_"]::before {
+        content: "";
+        width: 270px;
+        height: 20px;
+        background-color: #bbbbbb;
+        display: block;
+        margin: 0 auto 20px auto;
+        border-radius: 5px;
+    }
+
+    [class*="loader_background_"] .u-progress-bar-outer {
+        width: 270px !important;
+        height: 100% !important;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    [class*="loader_background_"] .u-progress-bar-background {
+        display: none;
+    }
+    [class*="loader_background_"] .u-progress-bar-caption {
+        position: absolute;
+        background: none;
+        top: calc(50% + 30px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #5c5d5f;
+        font-size: 13px;
+    }
+    [class*="loader_background_"] .u-progress-bar-inner {
+        background-color: #179fd7ff;
+        position: absolute;
+        left: calc(50% - 135px);
+        top: calc(50% - 32px);
+        height: 20px;
+        border-radius: 5px;
+        transform: translateY(-50%);
+    }
+    .sa-body-editor > [class*="crash-message_crash-wrapper_"] {
+        height: 100vh;
+    }
+
+    [class*="crash-message_crash-wrapper_"] {
+        width: 100%;
+        height: 100%;
+    }
+
+    [class*="crash-message_body_"] {
+        box-shadow: 3px 3px 8px rgba(51, 51, 51, .75);
+        color: #5c5d5f;
+        text-align: center;
+        border-radius: 7px 7px 0 0;
+        background: #fff;
+        padding: 0 14px 14px 14px;
+        width: 240px;
+    }
+
+    [class*="crash-message_body_"] img {
+        display: none;
+    }
+
+    [class*="crash-message_body_"] h2 {
+        border: 1px solid #b0b0b0;
+        border-radius: 7px 7px 0 0;
+        background: linear-gradient(#e0e0e0, #d0d0d0);
+        width: calc(100% + 28px);
+        margin-left: -15px;
+        height: 30px;
+    }
+
+    [class*="crash-message_body_"] h2 span {
+        font-size: 14px;
+        line-height: 30px;
+        top: -10px;
+        position: relative;
+        font-weight: normal;
+        color: #5c5d5f;
+    }
+
+    [class*="crash-message_body_"] p {
+        font-size: 12px;
+    }
+
+    [class*="crash-message_body_"] button {
+        border: 1px solid #d0d1d2 !important;
+        border-radius: 6px;
+        padding: 0 7px 1px !important;
+        height: 26px;
+        background: linear-gradient(#ffffff, #e6e8e8) !important;
+        white-space: nowrap;
+        color: #5c5d5f;
+        font-weight: normal;
+        font-size: 12px;
+    }
+
+    [class*="crash-message_body_"] button:hover {
+        background: #179fd7 !important;
+        color: #ffffff !important;
+    }
+
+    [class*="tool-select-base_mod-tool-select_"] {
+        border: 1px solid #d0d1d2;
+        margin: 0 0 3px;
+        padding: 0;
+        width: 38px;
+        height: 34px;
+        border-radius: 5px;
+        display: block;
+        background: linear-gradient(#fff, #e6e8e8);
+    }
+
+    [class*="tool-select-base_mod-tool-select_"] img {
+        display: none;
+    }
+
+    [class*="tool-select-base_mod-tool-select_"]::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    [class*="tool-select-base_mod-tool-select_"][title="Brush"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/613_assets.Resources_bitmapBrushOff.png");
+    }
+    [class*="tool-select-base_mod-tool-select_"][title="Line"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/491_assets.Resources_lineOff.png");
+    }
+    [class*="tool-select-base_mod-tool-select_"][title="Circle"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/525_assets.Resources_bitmapEllipseOff.png");
+    }
+    [class*="tool-select-base_mod-tool-select_"][title="Rectangle"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/492_assets.Resources_bitmapRectOff.png");
+    }
+    [class*="tool-select-base_mod-tool-select_"][title="Text"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/707_assets.Resources_bitmapTextOff.png");
+    }
+    [class*="tool-select-base_mod-tool-select_"][title="Fill"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/597_assets.Resources_bitmapPaintbucketOff.png");
+    }
+    [class*="tool-select-base_mod-tool-select_"][title="Eraser"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/603_assets.Resources_eraserOff.png");
+    }
+    [class*="tool-select-base_mod-tool-select_"][title="Select"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/545_assets.Resources_bitmapSelectOff.png");
+    }
+
+    [class*="tool-select-base_is-selected_"] {
+        background: rgb(73, 188, 226) !important;
+    }
+
+    [class*="tool-select-base_is-selected_"][title="Brush"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/692_assets.Resources_bitmapBrushOn.png");
+    }
+    [class*="tool-select-base_is-selected_"][title="Line"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/721_assets.Resources_lineOn.png");
+    }
+    [class*="tool-select-base_is-selected_"][title="Circle"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/608_assets.Resources_bitmapEllipseOn.png");
+    }
+    [class*="tool-select-base_is-selected_"][title="Rectangle"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/710_assets.Resources_bitmapRectOn.png");
+    }
+    [class*="tool-select-base_is-selected_"][title="Text"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/682_assets.Resources_bitmapTextOn.png");
+    }
+    [class*="tool-select-base_is-selected_"][title="Fill"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/722_assets.Resources_bitmapPaintbucketOn.png");
+    }
+    [class*="tool-select-base_is-selected_"][title="Eraser"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/549_assets.Resources_eraserOn.png");
+    }
+    [class*="tool-select-base_is-selected_"][title="Select"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/724_assets.Resources_bitmapSelectOn.png");
+    }
+
+    [class*="paint-editor_mode-selector_"]:has(*[title="Reshape"]) {
+        order: 1;
+    }
+
+    [class*="paint-editor_mode-selector"]:has(*[title="Reshape"]) [class*="tool-select-base_mod-tool-select_"] {
+        width: 27px;
+        height: 24px;
+    }
+
+    [class*="paint-editor_mode-selector"]:has(*[title="Reshape"]) [class*="tool-select-base_mod-tool-select_"][title="Select"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/579_assets.Resources_selectOff.png");
+    }
+
+    [class*="paint-editor_mode-selector"]:has(*[title="Reshape"]) [class*="tool-select-base_mod-tool-select_"][title="Reshape"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/689_assets.Resources_patheditOff.png");
+    }
+
+    [class*="paint-editor_mode-selector"]:has(*[title="Reshape"]) [class*="tool-select-base_mod-tool-select_"][title="Brush"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/576_assets.Resources_pathOff.png");
+    }
+
+    [class*="paint-editor_mode-selector"]:has(*[title="Reshape"]) [class*="tool-select-base_mod-tool-select_"][title="Eraser"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/603_assets.Resources_eraserOff.png");
+    }
+
+    [class*="paint-editor_mode-selector"]:has(*[title="Reshape"]) [class*="tool-select-base_mod-tool-select_"][title="Fill"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/523.png");
+    }
+
+    [class*="paint-editor_mode-selector"]:has(*[title="Reshape"]) [class*="tool-select-base_mod-tool-select_"][title="Text"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/474_assets.Resources_textOff.png");
+    }
+
+    [class*="paint-editor_mode-selector"]:has(*[title="Reshape"]) [class*="tool-select-base_mod-tool-select_"][title="Line"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/588_assets.Resources_vectorLineOff.png");
+    }
+
+    [class*="paint-editor_mode-selector"]:has(*[title="Reshape"]) [class*="tool-select-base_mod-tool-select_"][title="Circle"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/468_assets.Resources_vectorEllipseOff.png");
+    }
+
+    [class*="paint-editor_mode-selector"]:has(*[title="Reshape"]) [class*="tool-select-base_mod-tool-select_"][title="Rectangle"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/442_assets.Resources_vectorRectOff.png");
+    }
+
+    [class*="paint-editor_mode-selector"]:has(*[title="Reshape"]) [class*="tool-select-base_is-selected_"][title="Select"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/554_assets.Resources_selectOn.png");
+    }
+
+    [class*="paint-editor_mode-selector"]:has(*[title="Reshape"]) [class*="tool-select-base_is-selected_"][title="Reshape"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/661_assets.Resources_patheditOn.png");
+    }
+
+    [class*="paint-editor_mode-selector"]:has(*[title="Reshape"]) [class*="tool-select-base_is-selected_"][title="Brush"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/479_assets.Resources_pathOn.png");
+    }
+
+    [class*="paint-editor_mode-selector"]:has(*[title="Reshape"]) [class*="tool-select-base_is-selected_"][title="Eraser"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/549_assets.Resources_eraserOn.png");
+    }
+
+    [class*="paint-editor_mode-selector"]:has(*[title="Reshape"]) [class*="tool-select-base_is-selected_"][title="Text"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/476_assets.Resources_textOn.png");
+    }
+
+    [class*="paint-editor_mode-selector"]:has(*[title="Reshape"]) [class*="tool-select-base_is-selected_"][title="Line"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/711_assets.Resources_vectorLineOn.png");
+    }
+
+    [class*="paint-editor_mode-selector"]:has(*[title="Reshape"]) [class*="tool-select-base_is-selected_"][title="Circle"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/622_assets.Resources_vectorEllipseOn.png");
+    }
+
+    [class*="paint-editor_mode-selector"]:has(*[title="Reshape"]) [class*="tool-select-base_is-selected_"][title="Rectangle"]::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/716_assets.Resources_vectorRectOn.png");
+    }
+
+    [class*="paint-editor_mode-selector"] {
+        width: min-content;
+    }
+
+    [class*="paint-editor_bitmap-button_"] {
+        border: 1px solid #d0d1d2;
+        border-radius: 5px;
+        display: block;
+        background: linear-gradient(#fff, #e6e8e8);
+        color: #5c5d5f;
+        font-weight: normal;
+    }
+
+    [class*="paint-editor_bitmap-button_"] img {
+        display: none;
+    }
+
+    [class^="inline-message_inline-message"] .u-progress-bar-integrated {
+        display: none;
+    }
+
+    [class*="paint-editor_zoom-controls_"] [class*="paint-editor_button-group-button_"] {
+        margin: 0;
+        padding: 0;
+        border: 0 !important;
+        width: 25px;
+        height: 22px;
+        background: none;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    [class*="paint-editor_zoom-controls_"] [class*="paint-editor_button-group-button_"] img {
+        display: none;
+    }
+
+    [class*="paint-editor_zoom-controls_"] [class*="paint-editor_button-group-button_"]:first-of-type {
+        background: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/645_assets.Resources_zoomOutOff.png");
+    }
+    [class*="paint-editor_zoom-controls_"] [class*="paint-editor_button-group-button_"] {
+        background: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/449_assets.Resources_noZoomOff.png");
+    }
+    [class*="paint-editor_zoom-controls_"] [class*="paint-editor_button-group-button_"]:last-of-type {
+        background: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/602_assets.Resources_zoomInOff.png");
+    }
+
+    [class*="paint-editor_zoom-controls_"] [class*="paint-editor_button-group-button_"]:first-of-type:hover {
+        background: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/644_assets.Resources_zoomOutOn.png");
+    }
+    [class*="paint-editor_zoom-controls_"] [class*="paint-editor_button-group-button_"]:hover {
+        background: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/516_assets.Resources_noZoomOn.png");
+    }
+    [class*="paint-editor_zoom-controls_"] [class*="paint-editor_button-group-button_"]:last-of-type:hover {
+        background: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/471_assets.Resources_zoomInOn.png");
+    }
+
+    [class*="fixed-tools_button-group-button_"],
+    [class*="sound-editor_button_"],
+    [class*="labeled-icon-button_mod-edit-field"],
+    [class*="sound-editor_tool-button"],
+    [class*="sound-editor_row-reverse_"] > [class*="icon-button_container_"] {
+        border: 1px solid #d0d1d2 !important;
+        margin: 0 3px;
+        padding: 0 !important;
+        width: 24px !important;
+        height: 24px !important;
+        border-radius: 5px !important;
+        display: block;
+        background: linear-gradient(#fff, #e6e8e8);
+    }
+
+    [class*="sound-editor_tool-button"],
+    [class*="sound-editor_row-reverse_"] > [class*="icon-button_container_"] {
+        padding: 1px !important;
+    }
+
+    [class*="fixed-tools_button-group-button_"] img,
+    [class*="sound-editor_button_"] img {
+        display: none;
+    }
+
+    [class*="labeled-icon-button_mod-edit-field"] img,
+    [class*="sound-editor_tool-button"] img,
+    [class*="sound-editor_row-reverse_"] > [class*="icon-button_container_"] img {
+        filter: grayscale() brightness(50%);
+    }
+    [class*="labeled-icon-button_mod-edit-field"]:hover img,
+    [class*="sound-editor_tool-button"]:hover img,
+    [class*="sound-editor_row-reverse_"] > [class*="icon-button_container_"]:hover img {
+        filter: grayscale() brightness(500%);
+    }
+
+    [class*="fixed-tools_button-group-button_"]::before,
+    [class*="sound-editor_button_"]::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    [class*="fixed-tools_button-group-button_"][disabled],
+    [class*="sound-editor_button_"][disabled] {
+        opacity: .5;
+    }
+
+    [class*="fixed-tools_button-group-button_"]:hover,
+    [class*="sound-editor_button_"]:hover,
+    [class*="labeled-icon-button_mod-edit-field"]:hover,
+    [class*="sound-editor_tool-button"]:hover,
+    [class*="sound-editor_row-reverse_"] > [class*="icon-button_container_"]:hover {
+        background: rgb(73, 188, 226) !important;
+    }
+
+    [class*="fixed-tools_button-group-button_"]:first-child::before,
+    [class*="sound-editor_button_"]:first-child::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/623_assets.Resources_undoOff.png");
+    }
+
+    [class*="fixed-tools_button-group-button_"]:last-child::before,
+    [class*="sound-editor_button_"]:last-child::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/522_assets.Resources_redoOff.png");
+    }
+
+    [class*="fixed-tools_button-group-button_"]:hover:first-child::before,
+    [class*="sound-editor_button_"]:hover:first-child::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/463_assets.Resources_undoOn.png");
+    }
+
+    [class*="fixed-tools_button-group-button_"]:hover:last-child::before,
+    [class*="sound-editor_button_"]:hover:last-child::before {
+        background-image: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/575_assets.Resources_redoOn.png");
+    }
+
+    [class*="sound-editor_waveform-container_"] {
+        background: #f6f6f6;
+    }
+
+    [class*="waveform_waveform-path_"] {
+        fill: #303030;
+        stroke: none;
+    }
+
+    [class*="sound-editor_round-button_"] img {
+        display: none;
+    }
+
+    [class*="sound-editor_round-button_"] {
+        width: 32px;
+        height: 32px;
+        border-radius: 0;
+        border: none;
+    }
+
+    [class*="sound-editor_round-button_"][title="Play"] {
+        background: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/659_assets.Resources_playSndOff.png");
+    }
+
+    [class*="sound-editor_round-button_"][title="Play"]:hover {
+        background: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/462_assets.Resources_playSndOn.png");
+    }
+
+    [class*="sound-editor_round-button_"][title="Stop"] {
+        background: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/723_assets.Resources_pauseSndOff.png");
+    }
+
+    [class*="sound-editor_round-button_"][title="Stop"]:hover {
+        background: url("https://raw.githubusercontent.com/Clockiscool1234/Scratch2Theme/refs/heads/main/assets/670_assets.Resources_pauseSndOn.png");
+    }
+
+    [class*="audio-trimmer_playhead_"] {
+        border-left-color: #00f;
+    }
+}
